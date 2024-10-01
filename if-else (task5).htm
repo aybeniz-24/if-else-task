@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Məsafə Hesablama</title>
+    </head>
+    <body>
+        <p>Suret: <input id="suret" type="number" /></p>
+        <p>Zaman: <input id="zaman" type="number" /></p>
+        <p>Mesafe: <span id="ntc"></span></p>
+
+        <script>
+            const suret = document.querySelector("#suret")
+            const zaman = document.querySelector("#zaman")
+            const ntc = document.querySelector("#ntc")
+
+
+            function go(){
+                const mesafe = suret.value * zaman.value
+                ntc.innerHTML = ''
+
+                if (mesafe < 0) {
+                    ntc.innerHTML = 'Sürət və zaman müsbət olmalıdır!';
+                }else if( mesafe > 100 ){
+                    ntc.innerHTML += mesafe + ' km - Uzun mesafe'
+                }else{
+                    ntc.innerHTML += mesafe + ' km - Qısa mesafe'
+                }
+            }
+
+            suret.addEventListener("input", go)
+            zaman.addEventListener("input", go)
+        </script>
+    </body>
+</html>

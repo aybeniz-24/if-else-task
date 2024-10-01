@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Daxil Edilən Rəqəm üzrə Fəaliyyət</title>
+    </head>
+    <body>
+        <input id="inp" type="number" placeholder="Reqem daxil edin" />
+        <p id="ntc1"></p>
+        <script>
+           function go(){
+            let inp = document.querySelector("#inp").value
+            let ntc = inp > 0 ? `Kvadrat: ${Math.pow(inp, 2)}`
+                : inp < 0 ? `Mutleq deyer: ${Math.abs(inp)}`
+                : "Reqem sifirdir"
+
+                document.querySelector("#ntc1").innerHTML  = ntc
+           }
+           
+           document.querySelector("#inp").addEventListener('input', go)
+            
+            
+        </script>
+    </body>
+</html>

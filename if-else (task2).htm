@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bir ilin həlqəsi - task2</title>
+    </head>
+    <body>
+        <input id="inp" type="number" placeholder="Il daxil edin" />
+        <button onclick="yoxla()">Yoxla</button>
+        <p id="ntc"></p>
+
+        <script>
+            const inp = document.querySelector("#inp")
+            const ntc = document.querySelector("#ntc")
+
+            function yoxla(){
+                const inpVal = inp.value
+
+                if( inpVal == 1969 ){
+                   ntc.innerHTML += 'İlk insan Ayda'
+                }else if ( inpVal == 1989 ){
+                    ntc.innerHTML += "Berlin divarı dağıdıldı"
+                }else{
+                    ntc.innerHTML += "Xüsusi hadisə tapılmadı"
+                }
+            }
+
+        </script>
+    </body>
+</html>

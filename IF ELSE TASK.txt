@@ -1,0 +1,101 @@
+															IF ELSE TASK
+
+
+
+
+#1. Form doğrulama
+Bir istifadəçi formu düşün, burada istifadəçi yaşını daxil edir. Əgər yaş 18-dən kiçikdirsə, ekranda "Siz bu xidmətə daxil ola bilməzsiniz" mesajı göstərilsin. Əgər yaş 18-dən böyükdürsə, ancaq 60-dan kiçikdirsə, "Xoş gəlmisiniz" mesajı göstərilsin. Yaş 60-dan böyükdürsə, "Sizə xüsusi təkliflərimiz var" mesajı göstərilsin.
+
+
+
+
+#2. Bir ilin həlqəsi
+Bir il daxil edildikdə, ilin əlamətdar bir hadisəyə aid olub olmadığını yoxlayın. Məsələn:
+Əgər il 1969-dursa, "İlk insan Ayda" mesajı çıxsın.
+1989-dursa, "Berlin divarı dağıdıldı" mesajı çıxsın.
+Əgər digər bir ildirsə, "Xüsusi hadisə tapılmadı" mesajı göstərilsin.
+
+
+
+
+#3. Şifrənin doğruluğu və göz iconu
+Bir istifadəçi müəyyən şifrəni daxil etməlidir. Şifrə aşağıdakı qaydalara uyğun olmalıdır:
+Əgər şifrə 8 simvoldan qısadırsa, "Şifrə çox qısadır" mesajı çıxsın.
+Əgər şifrə təkcə hərflərdən ibarətdirsə, "Şifrədə həm hərf, həm də rəqəm olmalıdır" mesajı çıxsın.
+Şifrə həm hərflərdən, həm də rəqəmlərdən ibarətdirsə, "Şifrə qəbul edildi" mesajı verilsin.
+Göz iconu istifadəçinin daxil etdiyi şifrəni göstərmək və ya gizlətmək funksionallığı təmin edilir
+
+
+
+
+
+#4. Saat dilimi üzrə salamlama
+Saatı istifadəçidən input olaraq alın və aşağıdakı qaydalara əsasən uyğun mesajı göstərin:
+Saat 0-11 arasında daxil edilibsə, "Günaydın" mesajı çıxsın.
+Saat 12-17 arasındadırsa, "Günortanız xeyir" mesajı çıxsın.
+Saat 18-dən böyükdürsə, "Axşamınız xeyir" mesajı çıxsın.
+
+
+
+
+
+#5. Məsafə Hesablama
+Bir avtomobilin sürətini və zamanını alaraq, məsafəni hesablamaq üçün bir funksiya yazın. Əgər məsafə 100 kilometrdən çoxdursa, "Uzun məsafə", əks halda "Qısa məsafə" yazsın.
+
+
+
+
+
+#6.Qalib Müəyyənləşdirmə
+Bir yarışda iştirak edən iki idmançının xalını alaraq, hansı idmançının qalib olduğunu müəyyənləşdirin. Əgər xal eynidirsə, "Bərabərlik" yazın.
+
+
+
+
+
+#7.Gelişmiş Vergi Sistemi
+Bir şirkət sahibisən və işçilərinə görə vergi dərəcələrini hesablamağa çalışırsan. Yaş, illik gəlir, və işlədiyi sahəyə görə fərqli vergi dərəcələri tətbiq olunur. Şərtlər aşağıdakı kimidir:
+Yaş şərtləri:
+18 yaşdan kiçik olanlar heç bir vergi ödəmirlər.
+18-60 yaş aralığında olanlar gəlir vergisi ödəyirlər.
+60 yaşdan yuxarı şəxslərə 10% endirim edilir.
+Gəlir şərtləri:
+30,000 manatdan az olan gəlirlər üçün vergi 10%-dir.
+30,000-100,000 aralığında gəlirlər üçün vergi 20%-dir.
+100,000 manatdan çox gəlirlər üçün vergi 30%-dir.
+Sahə şərtləri:
+Texnologiya sahəsində işləyənlərə 5% vergi endirimi edilir.
+Tibb sahəsində işləyənlərə 10% vergi endirimi edilir.
+Digər sahələrdə isə heç bir əlavə endirim yoxdur.
+Məsələnin məntiqi:
+Verilən yaş, gəlir, və sahəyə görə işçinin ödəyəcəyi vergi miqdarını hesablayan bir funksiya yaz.
+
+
+
+
+#8. Daxil Edilən Rəqəm üzrə Fəaliyyət
+İstifadəçi bir rəqəm daxil edir. Əgər rəqəm müsbətdirsə, həmin rəqəmin kvadratını çıxar, mənfidirsə rəqəmin mütləq dəyərini, sıfırdırsa isə "Rəqəm sıfırdır" mesajını göstər.( ternary operatoru ilə )
+
+
+
+
+
+#9.Istifadəçidən yaş və ölkə adı məlumatlarını alaq və şərtlər qoyaq:
+
+Əgər istifadəçinin yaşı 18-dən çoxdursa və ölkəsi "Azerbaijan"-dırsa, onu "Xoş gəlmisiniz!" mesajı ilə salamla.
+Əgər yaşı 18-dən azdırsa və ölkəsi "Azerbaijan"-dırsa, ona "Yaşınız kifayət deyil!" deyək.
+Əgər istifadəçinin yaşı 18-dən çoxdursa və ölkəsi başqa bir ölkədirsə, "Xarici istifadəçi!" mesajı göstərək.
+Əks halda, "Yaşınız kifayət deyil və xarici istifadəçi!" mesajını göstərək.( ternary operatoru ilə )
+
+
+
+
+
+
+#10. İstifadəçinin yaşı və iş təcrübəsinə əsasən bir qərar qəbul edən sistem yazaq:
+Əgər istifadəçi ya 25-dən yuxarı yaşdadır və ya iş təcrübəsi 5 ildən çoxdursa, "İşə qəbul olunursunuz!" mesajı göstərilsin.
+Əks halda, "Daha çox təcrübə lazımdır!" mesajı göstərilsin.( ternary operatoru ilə )
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form doğrulama - task1</title>
+        <style>
+            input{
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input id="inp" type="number" placeholder="Yaşınızı daxil edin" /> <br />
+            <button onclick="daxilOL()">Daxil ol</button>
+        </form>
+
+        <script>
+            const inp = document.querySelector("#inp")
+            
+
+            function daxilOL (){
+                const inpVal = inp.value
+                if(inpVal < 18){
+                    alert('Siz bu xidmətə daxil ola bilməzsiniz')
+                }
+                else if( inpVal >= 18 && inpVal <= 60 ){
+                    alert('Xoş gəlmisiniz')
+                }else{
+                    alert('Sizə xüsusi təkliflərimiz var')
+                }
+            }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Yaş və ölkə adı </title>
+    </head>
+
+    <body>
+        <p id="ntc"></p>
+        <script>
+            const yas = prompt('Yasinizi daxil edin: ')
+            const olke = prompt('Olke daxil edin: ')
+
+            document.querySelector("#ntc").innerHTML = (yas > 18 && olke === "Azerbaycan") ? 'Xoş gəlmisiniz!' :
+                (yas < 18 && olke === "Azerbaycan") ? 'Yaşınız kifayət deyil!' :
+                    (yas > 18 && olke !== "Azerbaycan") ? 'Xarici istifadəçi!' :
+                        'Yaşınız kifayət deyil və xarici istifadəçi!'
+        </script>
+    </body>
+
+</html>

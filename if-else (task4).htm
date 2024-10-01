@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Saat dilimi üzrə salamlama - task4</title>
+    </head>
+    <body>
+        <input id="inp" type="number" placeholder="Saat daxil edin" />
+        <button onclick="yaz()">Mesaj</button>
+        <p id="ntc"></p>
+
+        <script>
+            const inp = document.querySelector("#inp")
+            const ntc = document.querySelector("#ntc")
+
+            function yaz(){
+                const inpVal = inp.value 
+                const now = new Date()
+                const hour = now.getHours()
+                ntc.innerHTML = ''
+
+                if( hour >= 0 && hour < 12 ){
+                    ntc.innerHTML += 'Sabahiniz xeyr'
+                }else if( hour >= 12 && hour < 18 ){
+                    ntc.innerHTML += 'Günortanız xeyir'
+                }else if ( hour >= 18 && hour < 22){
+                    ntc.innerHTML += 'Axşamınız xeyir'
+                }else if( hour >= 22 && hour < 24 ){
+                    ntc.innerHTML += 'Geceniz xeyir'
+                }else {
+                    ntc.innerHTML = 'Zəhmət olmasa 0-23 arası saat daxil edin.';
+                }
+            }
+        </script>
+    </body>
+</html>

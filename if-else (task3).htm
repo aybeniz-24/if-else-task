@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Şifrənin doğruluğu, Göz ikonu - task3</title>
+    <style>
+        .input-container {
+            position: relative;
+            width: fit-content;
+            margin-bottom: 5px;
+        }
+        .eye-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <input id="inp" type="password" placeholder="Şifrə təyin et" />
+        <span class="eye-icon" onclick="togglePassword()">👁️</span>
+    </div>
+    <button onclick="daxilOL()">Daxil ol</button>
+    <p id="ntc"></p>
+
+    <script>
+        const inp = document.querySelector("#inp")
+        const ntc = document.querySelector("#ntc")
+        const icon = document.querySelector(".eye-icon")
+
+
+        function togglePassword(){
+            if( inp.type === 'password'){
+                inp.type = 'text'
+                icon.textContent = "👁️‍🗨️"
+            }else{
+                inp.type = 'password'
+                icon.textContent = "👁️"
+            }
+        }
+
+        function daxilOL() {
+            const inpVal = inp.value
+            const letter = /^[a-zA-Z]+$/
+            const letterNumber = /^(?=.*[a-zA-Z])(?=.*\d)/
+
+            ntc.innerHTML = ''
+
+            if (inpVal.length < 8) {
+                ntc.innerHTML += 'Şifrə çox qısadır'
+            } else if (letter.test(inpVal)) {
+                ntc.innerHTML += 'Şifrədə həm hərf, həm də rəqəm olmalıdır'
+            } else if (letterNumber.test(inpVal)) {
+                ntc.innerHTML += 'Şifrə qəbul edildi'
+            }
+            else {
+                ntc.innerHTML += 'Şifrə tələblərə cavab vermir'
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Qalib Müəyyənləşdirmə</title>
+    </head>
+    <body>
+        <p>Birinci idmanci: <input id="inp1" type="number" /></p>
+        <p>Ikinci idmanci: <input id="inp2" type="number" /></p>
+        <p>Qalib olan: <span id="ntc"></span></p>
+
+        <script>
+            const inp1 = document.querySelector("#inp1")
+            const inp2 = document.querySelector("#inp2")
+            const ntc = document.querySelector("#ntc")
+
+            function go(){
+                const a = inp1.value
+                const b = inp2.value
+                ntc.innerHTML = ''
+
+                if( a == b){
+                    ntc.innerHTML += 'Bərabərlik'
+                }else if ( a > b ){
+                    ntc.innerHTML += 'Birinci idmanci'
+                }else{
+                    ntc.innerHTML += 'Ikinci idmanci'
+                }
+            }
+
+            inp1.addEventListener("input", go)
+            inp2.addEventListener("input", go)
+        </script>
+    </body>
+</html>
